@@ -1,0 +1,580 @@
+    /* ----------------------------------assets---------------------------------- */ 
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Helvetica';
+        /* background-color: gray; */
+    }
+    
+    /* styling for navabar */
+    nav{
+        width: 100%;
+        height: 65px;
+        box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1% 0;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        z-index: 10;
+    }
+    
+    /* .logo{
+        background-color: gainsboro;
+        width: 80px;
+        height: 100%;
+        margin-left: 40px;
+    } */
+
+    .logo-txt{
+        margin-left: 4vw;
+        font-family:cursive;
+        font-size: 2.4vw;
+    }
+
+    .menu{
+        margin-right: 4vw;
+        font-size: 1.8vw;
+    }
+    .a-nav{
+        margin-left: 3vw;
+        text-decoration: none;
+        padding: 4px;
+        font-size: 1.4vw;
+        border-radius: 4px;
+        color: #000;    
+    }
+
+    .a-nav:hover{
+        color: #fff;
+        background-color: #000;
+    }
+
+    /* styling for hero */
+    .hero-container{
+        width: 100%;
+        height: 100vh;
+        /* background-color: gray; */
+        background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+        url(image/classroom.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-bottom: 5%;
+    }
+    .hero-box{
+        width: 70%;
+        height: auto;
+        /* background-color: gainsboro; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: 2vh;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+    .pre-title{
+        font-size: 4.4vw;
+        color: #fff;
+        margin-bottom: -0.2vh;
+        font-family: 'Helvetica';
+        font-weight: 200;
+    }
+    span.pre-title{
+        font-style: italic;
+        color: burlywood;
+        padding: 4px;
+        font-weight: 600;
+    }
+    .title{
+        font-size: 6vw;
+        color: #fff;
+
+        overflow: hidden;
+        border-right: 3px solid white;
+        white-space: nowrap;
+        margin: 0 auto;
+        animation: 
+            typing 5.5s steps(40, end),
+            blink-carret .35s step-end infinite;
+        animation-delay: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes typing{
+        from{width: 0%;}
+        to{width: 100%;}
+    }
+    @keyframes blink-carret{
+        from, to{border-color: transparent;}
+        50%{border-color: white;}
+    }
+    .txt{
+        text-align: justify;
+        font-size: 2vw;
+        /* background-color: #fff; */
+        color: burlywood;
+        padding: 4px 10px;
+        border-radius: 8px;
+        margin-top: 0.6vh; 
+        font-family: 'helvetica';
+    }
+
+    /* styling for services */
+    h2.services{
+        text-align: center;
+        font-size: 4vw;
+    }
+    hr{
+        margin-top: -4.2vh;
+        width: 12%;
+        color: gainsboro;
+    }
+    .service-container{
+        width: 100%;
+        height: 400px;
+        /* background-color: gray; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2% 0;
+        margin-bottom: 5%;
+    }
+    .service-card{
+        width: 30%;
+        height: 100%;
+        margin: 0 1%;
+        /* background-color: gainsboro; */
+        display: flex;
+        flex-direction: column
+    }
+    .service-img{
+        width: 100%;
+        height: 65%;
+        /* background-color: white; */
+    }
+    .img-1{
+        background: url(image/ai1.jfif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-2{
+        background: url(image/ai2.jfif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .img-3{
+        background: url(image/ai3.jfif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .service-information{
+        width: 90%;
+        margin: 0 auto;
+        height: 35%;
+        /* background-color: silver; */
+    }
+
+    /* styling for quote */
+    .quote-container{
+        width: 100%;
+        background-color: gainsboro;
+        margin-bottom: 5%;
+        text-align: center;
+        padding: 2% 0;
+    }
+
+    p.quote{
+        padding: 0 20%;
+        font-family: 'Playfair display';
+        font-size: 2.5vw;
+        margin-top: -0.2vh;
+    }
+
+    .profile{
+        margin: 0 auto;
+        width: 55px; /*fixed size*/
+        height: 55px;
+        background-image: url(assets/profile/boy.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 100%;
+    }
+    p.name{
+        color: gray;
+        font-size: 1.2vw;
+    }
+
+    /* styling for about */
+    .about-container{
+        width: 100%;
+        display: flex;
+        height: 350px;
+        justify-content: center;
+        align-items: center;
+        /* background-color: gray; */
+        padding: 2% 0;
+        margin-bottom: 5%
+    }
+
+    .about-info{
+        width: 40%;
+        height: 100%;
+        /* background-color: gainsboro; */
+        padding: 0 2vw;
+    }
+
+    .p-pre{
+        font-size: 1.5vw;
+        font-weight: lighter;
+        color: gray;
+        margin-top: 8.5vh;
+        margin-bottom: -2.5vh;
+        padding: 0 1vw;
+    }
+    .h3-info{
+        font-size: 2.5vw;
+        margin-bottom: 2vh;
+        padding: 0 1vw;
+    }
+    .p-info{
+        margin-bottom: 6vh;
+        padding: 0 1vw;
+        font-size: 1.4vw;
+    }
+    .a-info{
+        display: inline;
+        text-align: center;
+        padding: 12px;
+        margin: 0 1vw;
+        border: 1px solid #000;
+        border-radius: 4px;
+        color: #000;
+        animation: a-info .2s forwards;
+        text-decoration: none;
+    }
+    .a-info:hover{
+        background-color: #000;
+        color: #fff;
+    }
+    .about-img{
+        width: 40% ;
+        height: 100%;
+        /* background-color: gainsboro; */
+        background-image: url(image/ai5.jfif);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* styling for question */
+    .question-container{
+        width: 100%;
+        height: 400px; 
+        /* background-color: gray; */
+        background-image: url(image/peak.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin-bottom: 5%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        
+        .question-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        padding: 1% 0;
+        width: 45%;
+        height: 80%;
+        /* top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        text-align: center;
+        /* background-color: burlywood; */
+    }
+
+    .h1-question{
+        font-family: 'Playfair display';
+        color: #fff;
+        font-size: 5.5vw;
+        font-weight: 600;
+        /* margin-top: 2vh; */
+    }
+    .p-question{
+        font-size: 2.1vw;
+        line-height: 4vh;
+        margin-top: 10px;
+        color: #fff;
+    }
+    .a-question{
+        display: inline-block;
+        margin-top: 2vh auto;
+        /* margin-top: 20px; */
+        color: #000;
+        background-color: #fff;
+        padding: 12px;
+        border-radius: 4px;
+        animation: a-question .4s forwards;
+        text-decoration: none;
+    }
+    .a-question:hover{
+        background-color: #000;
+        color: #fff;
+        box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(255, 255, 255, 0.19);
+    }
+
+    /* styling for footer */
+    footer{
+        width: 100%;
+        /* background-color: gray; */
+        height: 4vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2% 0 ;
+    }
+
+    .logo-footer{
+        font-family: 'Helvetica';
+        font-style: italic;
+        color: gray;
+        margin-left: 4vw;
+    }
+    .p-copy{
+        color: gray;
+        margin-right: 4vw;
+        font-style: italic;
+    }
+
+
+    /*responsive style for laptop desktop*/
+    @media screen and (max-width: 2560px) {
+        /* service */
+        hr{
+            margin-top: -5vh;
+        }
+        .service-container{
+            height: 82vh;  
+            font-size: 1.6vw;
+        }
+        /* about */
+        .about-container{
+            height: 74vh;
+        }
+        /* question */
+        .question-container{
+            height: 46vh;
+        }
+        .h1-question{
+            font-size: 3.8vw;
+            margin-top: -0.8vh;
+            margin-bottom: -1.2vh;
+        }
+        .p-question{
+            font-size: 1.8vw;
+            margin-bottom: 2.4vh;
+        }
+        .a-question{
+            font-size: 1.8vw;
+        }
+    }
+    /* laptop responsive base  */
+
+    /*responsive style for laptop L*/
+    @media screen and (max-width:1024px) {
+        /* service */
+        .service-container{
+            height: 460px;
+        }
+        /* about */
+        .about-container{
+            height: 54vh;
+        }
+        /* question */
+        .question-container{
+            height: 38vh;
+        }
+        .h1-question{
+            font-size: 3.8vw;
+            margin-bottom: -1.2vh;
+        }
+        .p-question{
+            font-size: 1.8vw;
+            margin-bottom: 2.4vh;
+        }
+        .a-question{
+            font-size: 1.8vw;
+        }
+    }
+    /*responsive style for tablet*/
+    @media screen and (max-width:768px) {
+        /* nav */
+        /* hero */
+            /* already responsive                                           */
+        /* services */
+            hr{
+                margin-top: -2.8vh;
+            }
+        /*quote*/
+        .profile{
+            width: 33px;
+            height: 33px;
+        }
+        /* about */
+            .about-container{
+                height: 300px;
+            }
+        /* question */
+        .question-container{
+            height: 38vh;
+        }
+        .p-question{
+            line-height: 3vh;
+        }
+        a.question{
+            border-radius: 2px;
+        }
+        /* footer */
+            /* already responsive */
+        
+    }
+
+    /*responsive style for mobile*/
+    @media screen and (max-width:425px){
+        /* navabar */
+        nav{
+            height: 35px;
+        }
+        .logo-txt{
+            font-size: 2.8vw;
+        }
+        .a-nav{
+            font-size: 2.2vw;
+            padding: 2.1px;
+        }
+        /* hero */
+        .hero-box{
+            width: 75%;
+            /* background-color: gainsboro; */
+        }
+        .pre-title{
+            font-size: 5vw;
+        }
+        .title{
+            font-size: 6.8vw;
+        }
+        .txt{
+            font-size: 2.6vw;
+        }
+        /* services */
+        h2.services{
+            font-size: 7vw;
+        }
+        .service-container{
+            height: 1200px;
+            flex-direction: column;
+        }
+        .service-card{
+            width: 80%;
+            height: 100%;
+            margin-bottom: 60px;
+        }
+        .service-img{
+            height: 70%;
+        }
+        .service-information{
+            /* background-color: gainsboro; */
+            width: 95%;
+            font-size: 4.6vw;
+        }
+        /* quote */
+        .quote-container{
+            padding: 6% 0;
+        }
+        p.quote{
+            padding: 0 10%;
+            font-size: 6vw;
+            line-height: 1.4;
+        }
+        .profile{
+            width: 65px;
+            height: 65px;
+        }
+        p.name{
+            font-size: 4.4vw;
+        }
+        /* about */
+        .about-container{
+            height: 450px;
+            flex-direction: column-reverse;
+            /* background-color: gainsboro; */
+        }
+        .about-info{
+            height: 100%;
+            width: 90%;
+            margin: 0 auto;
+            /* background-color: gainsboro; */
+        }
+        .about-img{
+            display: none;
+        }
+        .p-pre{
+            margin-bottom: -4.1vh;
+            font-size: 4vw;
+        }
+        .h3-info{
+            font-size: 8vw;
+        }
+        .p-info{
+            font-size: 5vw;
+            margin-bottom: 8.5vh;
+        }
+        /* question */
+        .question-container{
+            height: 450px;
+        }
+        .question-box{
+            /* background-color: burlywood; */
+            width: 85%;
+            height: 70%;
+        }
+        .h1-question{
+            font-size: 12vw;
+        }
+        .p-question{
+            font-size: 6.5vw;
+            line-height: 4.5vh;
+        }
+        /* footer */
+        footer{
+            flex-direction: column;
+        }
+        .logo-footer{
+            font-size: 3.4vw;
+        }
+        .p-copy{
+            margin-top: -8px;
+            font-size: 3.4vw;
+        }
+    }
